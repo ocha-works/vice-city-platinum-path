@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vice City Platinum Path — GTA VI Trophy Guide &amp; Tracker</title>
+<meta name="description" content="An offline guide and tracker for all 55 PlayStation 5 trophies of Grand Theft Auto VI: the official list, a roadmap to the platinum, missable watch flags and a cited guide for every trophy.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header id="topbar">
+  <div class="brand">
+    <svg id="brand-cup" viewBox="0 0 48 48" width="40" height="40" aria-hidden="true"><path d="M14 6h20v6h6a10 10 0 0 1-10.6 10A13 13 0 0 1 26 25.9V34h5v6H17v-6h5v-8.1A13 13 0 0 1 18.6 22 10 10 0 0 1 8 12h6V6zm-2 10a6 6 0 0 0 5.4 6A16 16 0 0 1 16 16h-4zm24 0h-4a16 16 0 0 1-1.4 6A6 6 0 0 0 36 16z" fill="currentColor"/></svg>
+    <div>
+      <h1>Vice City Platinum Path</h1>
+      <p class="tagline">Grand Theft Auto VI — PS5 trophy guide &amp; tracker · all 55 trophies · works offline</p>
+    </div>
+  </div>
+  <div id="progress-summary" aria-live="polite">
+    <svg id="progress-ring" viewBox="0 0 72 72" width="72" height="72" role="img" aria-label="Overall progress">
+      <circle class="ring-track" cx="36" cy="36" r="31"></circle>
+      <circle id="ring-fill" class="ring-fill" cx="36" cy="36" r="31"></circle>
+      <text id="ring-text" x="36" y="41" text-anchor="middle">0%</text>
+    </svg>
+    <div id="grade-tally"></div>
+  </div>
+</header>
+
+<nav id="controls" aria-label="Tracker controls">
+  <input id="search" type="search" placeholder="Search trophies…" autocomplete="off">
+  <div id="kind-filters" role="group" aria-label="Filter by kind">
+    <button data-kind="all" class="chip active">All 55</button>
+    <button data-kind="story" class="chip">Story</button>
+    <button data-kind="watch" class="chip">Missable watch</button>
+    <button data-kind="collectibles" class="chip">Collectibles</button>
+    <button data-kind="activities" class="chip">Activities</button>
+    <button data-kind="completion" class="chip">Completion</button>
+  </div>
+  <select id="grade-filter" aria-label="Filter by grade">
+    <option value="all">Every grade</option>
+    <option value="platinum">Platinum</option>
+    <option value="gold">Gold</option>
+    <option value="silver">Silver</option>
+    <option value="bronze">Bronze</option>
+  </select>
+  <label class="toggle"><input id="spoiler-toggle" type="checkbox"> Spoiler shield: hide story trophies until earned</label>
+  <label class="toggle"><input id="hide-earned" type="checkbox"> Hide earned</label>
+  <div id="data-tools">
+    <button id="export-btn" type="button">Export progress</button>
+    <label id="import-label">Import progress<input id="import-file" type="file" accept="application/json" hidden></label>
+    <button id="reset-btn" type="button">Reset</button>
+  </div>
+</nav>
+
+<p id="honesty-note">Written before release from the official list: names, descriptions and grades are PlayStation's own, as listed by PSNProfiles and Exophase. The game is not out, so no trophy is <em>confirmed</em> missable — the watch flags below are caution flags read from the wording of the official descriptions, and every guide cites its sources.</p>
+
+<main id="checklist">
+  <h2>The official list — 55 trophies</h2>
+  <p id="list-status" class="section-intro"></p>
+  <ol id="trophy-list"></ol>
+</main>
+
+<section id="roadmap">
+  <h2>Roadmap to the platinum</h2>
+  <p class="section-intro">Six stages, built from the official descriptions: which chapters and missions, which collectibles and counts, in what order. Story first, collections while the map is fresh, grinds and free-roam feats after, and the 100% trophy to close.</p>
+  <div id="roadmap-stages"></div>
+</section>
+
+<section id="missable-watch">
+  <h2>Missable watch — read the descriptions closely</h2>
+  <p class="section-intro">Nothing here is confirmed: GTA VI is unreleased. These are the trophies whose official wording suggests a choice, a partner who must be present, or a one-off moment — the ones a careful player protects with manual saves.</p>
+  <div id="watch-list"></div>
+</section>
+
+<aside id="detail-panel" hidden aria-label="Trophy guide">
+  <button id="detail-close" type="button" aria-label="Close guide">×</button>
+  <div id="detail-body"></div>
+</aside>
+
+<footer id="sources-footer">
+  <h2>Sources</h2>
+  <ul>
+    <li>Official PlayStation 5 trophy list for Grand Theft Auto VI (PlayStation) — names, descriptions, grades and counts, as listed by <span class="src-name">PSNProfiles</span> and <span class="src-name">Exophase</span> before the bounty opened; the two agree on every name, description and grade.</li>
+    <li><span class="src-name">Rockstar Games — Grand Theft Auto VI official page and trailers</span> (rockstargames.com/VI): the state of Leonida, Vice City, and the two protagonists, Lucia and Jason.</li>
+  </ul>
+  <p>Every guide on this page is written in our own words for this entry; sources are cited beside each trophy, never copied. No Rockstar Games logo, artwork or game screenshot is used anywhere: the look is our own. Progress is stored only in your browser (localStorage) and never leaves your machine.</p>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
